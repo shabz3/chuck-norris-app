@@ -3,13 +3,13 @@ import Header from './Header';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+
 import Button from 'react-bootstrap/Button';
 import './App.css';
 
 function App() {
 	const [fact, setFact] = useState('');
+	// eslint-disable-next-line no-unused-vars
 	const [image, setImage] = useState('https://assets.chucknorris.host/img/avatar/chuck-norris.png');
 	const [categories, setCategories] = useState([]);
 	const renderSingleCategory = useRef('Select A Category');
@@ -22,7 +22,6 @@ function App() {
 	const getFromApi = async (url) => {
 		const response = await fetch(url);
 		const data = await response.json();
-		console.log(data.value);
 		setFact(data.value);
 	};
 
