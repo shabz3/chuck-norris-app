@@ -18,6 +18,7 @@ function App() {
 	useEffect(() => {
 		getFromApi('https://api.chucknorris.io/jokes/random');
 		getCategories();
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	const getFromApi = async (url) => {
