@@ -10,13 +10,11 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.div1 {
-
-}
-.div2{
+.div2 {
   display: inline;
   white-space: nowrap;
 }
+
 .title-text {
   display: inline;
   white-space: nowrap;
@@ -36,10 +34,21 @@
   flex-wrap: wrap;
   text-align: center;
   padding-left: 1%;
-  padding-right: 1%
+  padding-right: 1%;
+  padding-bottom: 5%;
+}
+
+.copy-button {
+  margin-top: auto;
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+  font-size: 1.3rem;
 }
 
 .fact-div {
+  display: flex;
+  flex-direction: column;
   background-color: aliceblue;
   border-radius: 10px;
   box-shadow: 0px 5px 20px rgb(71, 71, 71);
@@ -48,12 +57,11 @@
   margin-left: 20%;
   margin-right: 20%;
   padding-top: 5%;
-  padding-bottom: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-  
 }
-.outer-fact-div{
+
+.outer-fact-div {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -64,11 +72,14 @@
   display: block;
   margin-top: 5%;
 }
-.dropdown{
+
+.dropdown {
   margin: 0 auto;
   display: block;
   width: 30%;
+  font-size: 1.5rem;
 }
-.fact-button{
-  
+
+.fact-button {
+  font-size: 1.5rem;
 }
